@@ -105,10 +105,12 @@ function cleanDist() {
 function building() {
   return src([
     'app/css/style.min.css',
-    '!app/images/**/*.html',
-    'app/images/*.*',
-    '!app/images/*.svg',
-    'app/images/sprite.svg',
+     '!app/images/**/*.html',
+    'app/images/src/*.*',
+    'app/images/src/**/*.*',
+     'app/images/*.*',
+     '!app/images/*.svg',
+     //'app/images/sprite.svg',
     'app/fonts/*.*',
     'app/js/main.min.js',
     'app/**/*.html'
